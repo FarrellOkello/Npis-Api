@@ -3,7 +3,7 @@ import { IsNotEmpty, IsOptional } from "class-validator";
 import { Entity } from "typeorm";
 
 @ObjectType()
-@Entity()
+@Entity("User")
 export class User {
   @Field()
   userId: string;

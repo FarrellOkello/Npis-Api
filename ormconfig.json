@@ -1,0 +1,16 @@
+{
+  "type": "mssql",
+  "host": "TECH/SQL",
+  "username": "sa",
+  "password": "Sql@123",
+  "database": "NPIS_LIVE",
+  "entities": ["dist/**/*.entity.js"],
+  "synchronize": false,
+  "logging": ["error"],
+  "options": {
+    "encrypt": false,
+    "enableArithAbort": true,
+    "requestTimeout": 999999,
+    "connectionTimeout": 999999
+  }
+}
