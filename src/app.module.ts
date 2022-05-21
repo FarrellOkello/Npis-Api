@@ -10,22 +10,7 @@ import UsersModule from './users/users.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: true,
-    }), UsersModule, TypeOrmModule.forRoot({
-      type: "mysql",
-      host: "127.0.0.1",
-      username: "root",
-      password: "",
-      port: 3306,
-      database: "test",
-      entities: ["dist/**/*.entity.js"],
-      synchronize: true,
-      // options:{
-      //     encrypt:false, 
-      //     enableArithAbort:true,
-      //     requestTimeout: 999999,
-      //     connectionTimeout: 999999
-      // } 
-    }), LaboratoryModule
+    }), UsersModule,
   ],
   controllers: [],
   providers: [],
