@@ -3,8 +3,8 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
   await app.listen(1100);
   console.log("Npis is running at 1100.........");
-
 }
 bootstrap();

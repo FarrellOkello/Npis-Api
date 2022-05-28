@@ -1,10 +1,10 @@
 {
   "type": "mssql",
-  "host": "TECH/SQL",
+  "host": "localhost",
   "username": "sa",
-  "password": "Sql@123",
-  "database": "NPIS_LIVE",
-  "entities": [],
+  "password": "12345678=j",
+  "database": "Energy_Test",
+  "entities": ["dist/**/*.entity.js"],
   "synchronize": false,
   "logging": ["error"],
   "options": {

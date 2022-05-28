@@ -1,0 +1,142 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CompanyMasterDto {
+  ID: Float!
+  CompanyCode: String!
+  CompanyName: String!
+  CompanyRegistrationNumber: String!
+  Email: String!
+  AlternateEmail: String!
+  ContactPersonName: String!
+  ContactNumber: String!
+  AlternateContactNumber: String!
+  Fax: String!
+  TaxIdentificationNumber: String!
+  Nationality: String!
+  Corporatestatus: String!
+  IsSubmitted: Float!
+  IsActive: Float!
+  CompanyType: String!
+  RegisterAddress: String!
+  AlternateAddress: String!
+  District: String!
+  CompanyRegion: String!
+  County: String!
+  Subcounty: String!
+  Parish: String!
+  Zone_LC1: String!
+  PostalCode: String!
+  CreatedBy: Float!
+  ModifiedBy: Float!
+  CreatedDate: DateTime!
+  ModifiedDate: DateTime!
+  CompanyRole: String!
+  ParentID: String!
+  CompanyLogo: String!
+  CompanyLogoExtension: String!
+  PermitType: String!
+  PermitNumber: String!
+  IssueDate: String!
+  ExpiryDate: String!
+  PermitStatus: String!
+  Company_Site: String!
+  PermitDetails: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  companyMasters: [CompanyMasterDto!]
+  companyMaster(id: Float!): CompanyMasterDto
+}
+
+type Mutation {
+  createCompanyMaster(data: CreateCompanyMasterInput!): CompanyMasterDto
+  updateCompanyMaster(id: Float!, data: UpdateCompanyMasterInput!): CompanyMasterDto
+  removeCompanyMaster(id: Float!): CompanyMasterDto
+}
+
+input CreateCompanyMasterInput {
+  CompanyCode: String!
+  CompanyName: String!
+  CompanyRegistrationNumber: String!
+  Email: String!
+  AlternateEmail: String!
+  ContactPersonName: String!
+  ContactNumber: String!
+  AlternateContactNumber: String!
+  Fax: String!
+  TaxIdentificationNumber: String!
+  Nationality: String!
+  Corporatestatus: String!
+  IsSubmitted: Float!
+  IsActive: Float!
+  CompanyType: String!
+  RegisterAddress: String!
+  AlternateAddress: String!
+  District: String!
+  CompanyRegion: String!
+  County: String!
+  Subcounty: String!
+  Parish: String!
+  Zone_LC1: String!
+  PostalCode: String!
+  CreatedBy: Float!
+  ModifiedBy: Float!
+  CompanyRole: String!
+  ParentID: String!
+  CompanyLogo: String!
+  CompanyLogoExtension: String!
+  PermitType: String!
+  PermitNumber: String!
+  IssueDate: String!
+  ExpiryDate: String!
+  PermitStatus: String!
+  Company_Site: String!
+  PermitDetails: String!
+}
+
+input UpdateCompanyMasterInput {
+  CompanyCode: String
+  CompanyName: String
+  CompanyRegistrationNumber: String
+  Email: String
+  AlternateEmail: String
+  ContactPersonName: String
+  ContactNumber: String
+  AlternateContactNumber: String
+  Fax: String
+  TaxIdentificationNumber: String
+  Nationality: String
+  Corporatestatus: String
+  IsSubmitted: Float
+  IsActive: Float
+  CompanyType: String
+  RegisterAddress: String
+  AlternateAddress: String
+  District: String
+  CompanyRegion: String
+  County: String
+  Subcounty: String
+  Parish: String
+  Zone_LC1: String
+  PostalCode: String
+  CreatedBy: Float
+  ModifiedBy: Float
+  CompanyRole: String
+  ParentID: String
+  CompanyLogo: String
+  CompanyLogoExtension: String
+  PermitType: String
+  PermitNumber: String
+  IssueDate: String
+  ExpiryDate: String
+  PermitStatus: String
+  Company_Site: String
+  PermitDetails: String
+}
