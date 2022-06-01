@@ -3,7 +3,7 @@
   "host": "localhost",
   "username": "sa",
   "password": "12345678=j",
-  "database": "Energy_Test",
+  "database": "NPIS_LIVE_2",
   "entities": ["dist/**/*.entity.js"],
   "synchronize": false,
   "logging": ["error"],
